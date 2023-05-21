@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "917440627503",
+    "project_id": "furnituremaster-be87d",
+    "storage_bucket": "furnituremaster-be87d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917440627503:android:23af6a4e5cf1baa59e57da",
+        "android_client_info": {
+          "package_name": "com.delitx.furnituremaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917440627503-ogfdntmsrid0qql6r1kao74jglv7hmho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfVakrL7HQd9I4FDGA1hW_IZbZ6Dyx4hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917440627503-ogfdntmsrid0qql6r1kao74jglv7hmho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

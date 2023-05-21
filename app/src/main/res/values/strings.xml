@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name" translatable="false">FurnitureMaster</string>
+    <string name="navigation_contacts">Contacts</string>
+    <string name="navigation_current_basket">Cart</string>
+    <string name="navigation_saved_baskets">Archive</string>
+    <string name="navigation_catalogue">Catalogue</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="added_to_cart">Added to cart</string>
+    <string name="already_in_cart">Product already in cart</string>
+    <string name="save">Save to archive</string>
+    <string name="to_order">Order</string>
+    <string name="set_current">Set current</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="comment">Comment</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="call_back">Call back</string>
+    <string name="from_to">from %1$s to %2$s</string>
+    <string name="delete_basket">Delete basket</string>
+    <string name="delete_product">Delete product</string>
+    <string name="price">Price</string>
+    <string name="price_total">Total price</string>
+    <string name="amount">Amount</string>
+    <string name="choose_configuration">Choose configuration</string>
+    <string name="configuration_not_chosen">Configuration not chosen</string>
+    <string name="value_not_in_range">Value is not in range</string>
+    <string name="gps_require">This application requires GPS to work properly, do you want to enable it?</string>
+    <string name="order">Order</string>
+    <string name="send_email">Send email using…</string>
+    <string name="no_email_installed">No email clients installed.</string>
+    <string name="see_in_interior">See product in interior</string>
+    <string name="camera_permission">Camera permission is needed to show product in interior</string>
+    <string name="view_in_ar">View in 3D</string>
+    <string name="delete_current">This will delete current active cart.You sure?</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="go_to_catalogue">Go to catalogue</string>
+    <string name="select_category">Select category</string>
+    <string name="select_product">Select product</string>
+    <string name="select_options">Select options</string>
+    <string name="other">Other</string>
+    <string name="need_to_update">Need to update app</string>
+    <string name="loading_error">Loading error</string>
+    <string name="internet_connection_unavailable">Internet connection unavailable</string>
+</resources>

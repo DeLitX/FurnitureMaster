@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_catalogue">
+
+    <fragment
+        android:id="@+id/navigation_catalogue"
+        android:name="com.delitx.furnituremaster.ui.CatalogueFragment"
+        android:label="CatalogueFragment" >
+        <action
+            android:id="@+id/action_navigation_catalogue_to_noavigation_catalogue_products_fragment"
+            app:destination="@id/noavigation_catalogue_products_fragment" />
+        <action
+            android:id="@+id/action_navigation_catalogue_to_zoomablePagerActivity"
+            app:destination="@id/zoomablePagerActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_current_basket"
+        android:name="com.delitx.furnituremaster.ui.CurrentBasketFragment"
+        android:label="CurrentBasketFragment" >
+        <action
+            android:id="@+id/action_navigation_current_basket_to_navigation_concrete_product"
+            app:destination="@id/navigation_concrete_product" />
+        <argument
+            android:name="isCurrent"
+            app:argType="boolean"
+            android:defaultValue="true" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_navigation_current_basket_to_navigation_catalogue"
+            app:destination="@id/navigation_catalogue" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_concrete_product"
+        android:name="com.delitx.furnituremaster.ui.ConcreteProductFragment"
+        android:label="ConcreteProductFragment">
+        <argument
+            android:name="productId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="productConfiguration"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_navigation_concrete_product_to_arActivity"
+            app:destination="@id/arActivity" />
+        <argument
+            android:name="basketId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_saved_baskets"
+        android:name="com.delitx.furnituremaster.ui.SavedBasketsFragment"
+        android:label="SavedBasketsFragment" >
+        <action
+            android:id="@+id/action_navigation_saved_baskets_to_navigation_current_basket"
+            app:destination="@id/navigation_current_basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_contacts"
+        android:name="com.delitx.furnituremaster.ui.ContactsFragment"
+        android:label="fragment_concrete_product"
+        tools:layout="@layout/fragment_concrete_product" />
+    <fragment
+        android:id="@+id/noavigation_catalogue_products_fragment"
+        android:name="com.delitx.furnituremaster.ui.CatalogueProductsFragment"
+        android:label="CatalogueProductsFragment" >
+        <action
+            android:id="@+id/action_noavigation_catalogue_products_fragment_to_navigation_concrete_product"
+            app:destination="@id/navigation_concrete_product" />
+    </fragment>
+    <activity
+        android:id="@+id/zoomablePagerActivity"
+        android:name="com.delitx.furnituremaster.ui.ZoomablePagerActivity"
+        android:label="ZoomablePagerActivity" >
+        <argument
+            android:name="position"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="collectionId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </activity>
+    <activity
+        android:id="@+id/arActivity"
+        android:name="com.delitx.furnituremaster.ui.ArActivity"
+        android:label="ArActivity" >
+        <argument
+            android:name="link"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </activity>
+</navigation>

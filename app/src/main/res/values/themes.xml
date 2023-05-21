@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FurnitureMaster" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#35D6E8</item>
+        <item name="colorPrimaryVariant">#53c2cf</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#46f0e4</item>
+        <item name="colorSecondaryVariant">#6fe8e0</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorOnSurface">#000000</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#35D6E8</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
