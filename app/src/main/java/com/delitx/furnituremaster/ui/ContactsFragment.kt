@@ -185,13 +185,13 @@ class ContactsFragment : Fragment() {
 
     private fun isServicesOK(): Boolean {
         val available =
-            GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this.context)
+            GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(requireContext())
         if (available == ConnectionResult.SUCCESS) {
             return true
         } else if (GoogleApiAvailability.getInstance().isUserResolvableError(available)) {
             val dialog = GoogleApiAvailability.getInstance()
-                .getErrorDialog(this.activity, available, ERROR_DIALOG_REQUEST)
-            dialog.show()
+                .getErrorDialog(requireActivity(), available, ERROR_DIALOG_REQUEST)
+            dialog?.show()
         } else {
             Toast.makeText(this.context, "You can't make map requests", Toast.LENGTH_LONG).show()
         }

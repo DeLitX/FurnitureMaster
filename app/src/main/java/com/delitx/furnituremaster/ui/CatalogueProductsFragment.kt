@@ -10,9 +10,10 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.GridCells
+import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.itemsIndexed
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -60,7 +61,7 @@ class CatalogueProductsFragment : Fragment() {
     @Composable
     private fun MainContent() {
         val list = viewModel.productsToPresent.value
-        LazyVerticalGrid(cells = GridCells.Fixed(2), modifier = Modifier.fillMaxSize(1f)) {
+        LazyVerticalGrid(columns = GridCells.Fixed(2), modifier = Modifier.fillMaxSize(1f)) {
             itemsIndexed(items = list) { index, product ->
                 ProductLayout(product = product)
                 Surface(color = MainOrange) {
